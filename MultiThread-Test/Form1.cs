@@ -16,5 +16,20 @@ namespace MultiThread_Test
 		{
 			InitializeComponent();
 		}
+
+		private void button_CreateNewThread_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void button_InterruptThread_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void button_CreateSubthread_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

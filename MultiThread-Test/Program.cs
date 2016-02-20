@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MultiThread_Test
@@ -16,7 +13,9 @@ namespace MultiThread_Test
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Form1());
+
+			const int countModalForms = 5;
+			Application.Run(new Form1(countModalForms));
 		}
 	}
 }

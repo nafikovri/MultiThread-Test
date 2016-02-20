@@ -76,7 +76,7 @@
 			this.button_InterruptThread.Location = new System.Drawing.Point(219, 70);
 			this.button_InterruptThread.Name = "button_InterruptThread";
 			this.button_InterruptThread.Size = new System.Drawing.Size(129, 23);
-			this.button_InterruptThread.TabIndex = 3;
+			this.button_InterruptThread.TabIndex = 5;
 			this.button_InterruptThread.Text = "Завершить текущий";
 			this.button_InterruptThread.UseVisualStyleBackColor = true;
 			this.button_InterruptThread.Click += new System.EventHandler(this.button_InterruptThread_Click);
@@ -86,7 +86,7 @@
 			this.button_CreateSubthread.Location = new System.Drawing.Point(12, 99);
 			this.button_CreateSubthread.Name = "button_CreateSubthread";
 			this.button_CreateSubthread.Size = new System.Drawing.Size(201, 23);
-			this.button_CreateSubthread.TabIndex = 3;
+			this.button_CreateSubthread.TabIndex = 4;
 			this.button_CreateSubthread.Text = "Создать новый подпоток в текущем";
 			this.button_CreateSubthread.UseVisualStyleBackColor = true;
 			this.button_CreateSubthread.Click += new System.EventHandler(this.button_CreateSubthread_Click);
@@ -102,8 +102,13 @@
 			this.Controls.Add(this.label_threadsInQueue);
 			this.Controls.Add(this.label_threadsInQueue_static);
 			this.Controls.Add(this.progressBar);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.MaximizeBox = false;
 			this.Name = "Form1";
 			this.Text = "Form1";
+			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+			this.Load += new System.EventHandler(this.Form1_Load);
+			this.Shown += new System.EventHandler(this.Form1_Shown);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

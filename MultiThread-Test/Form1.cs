@@ -31,5 +31,19 @@ namespace MultiThread_Test
 		{
 
 		}
+
+		/// <summary>
+		/// Задача, заполняющая прогресс-бар. Выполняется не менее 10 секунд.
+		/// </summary>
+		private void ThreadStart()
+		{
+			progressBar.Value = 0;
+
+			for (int i = 1; i <= 100; i++)
+			{
+				Thread.Sleep(100);
+				progressBar.Value = i;
+			}
+		}
 	}
 }
